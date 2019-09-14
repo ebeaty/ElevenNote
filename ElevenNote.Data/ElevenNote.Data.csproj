@@ -55,12 +55,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IdentityModels.cs" />
+    <Compile Include="Migrations\201909111845490_InitialCreate.cs" />
+    <Compile Include="Migrations\201909111845490_InitialCreate.Designer.cs">
+      <DependentUpon>201909111845490_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909141601003_StarFeature.cs" />
+    <Compile Include="Migrations\201909141601003_StarFeature.Designer.cs">
+      <DependentUpon>201909141601003_StarFeature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Note.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201909111845490_InitialCreate.resx">
+      <DependentUpon>201909111845490_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909141601003_StarFeature.resx">
+      <DependentUpon>201909141601003_StarFeature.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
