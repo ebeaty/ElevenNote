@@ -42,7 +42,7 @@ namespace ElevenNote.Services
                 var query =
                     ctx
                     .Notes
-                    .Where(e.OwnerId == _userId)
+                    .Where(e => e.OwnerId == _userId)
                     .Select(
                         e =>
                         new NoteListItem
